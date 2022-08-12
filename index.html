@@ -6,15 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Academlo Store</title>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <!-- JS -->
+  <script src="/assets/js/main.js" type="module" defer></script>
 </head>
 
 <body>
-
-  <!--========== Logo Academlo con contorno ==========-->
-  <div class="loader" id="loader">
-    <svg class="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48">
+  <div id="loader" class="loader">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="loader--img">
       <title>Academlo Logo</title>
       <g>
         <g>
@@ -28,21 +29,100 @@
       </g>
     </svg>
   </div>
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="#" class="nav--logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48">
+          <title>Academlo Logo</title>
+          <g>
+            <g>
+              <path
+                d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+              </path>
+            </g>
+          </g>
+        </svg>
+      </a>
 
-  <!--=========== Logo Academlo sin contorno ==========-->
+      <div class="nav--menu">
+        <ul class="nav--list">
+          <li class="nav--item">
+            <a href="#" class="nav--link">
+              Home
+            </a>
+          </li>
+          <li class="nav--item">
+            <a href="#" class="nav--link">
+              Productos
+            </a>
+          </li>
+        </ul>
+        <div class="nav--close">
+          <i class='bx bx-x'></i>
+        </div>
+      </div>
 
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48">
-    <title>Academlo Logo</title>
-    <g>
-      <g>
-        <path
-          d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
-        </path>
-      </g>
-    </g>
-  </svg>
+      <div class="nav--btns">
+        <i class='bx bx-moon change-theme' id="theme-button"></i>
 
-  <main></main>
+        <div class="nav--cart" id="cart-shop">
+          <i class='bx bx-shopping-bag'></i>
+          <span id="cart-counter" class="counter">0</span>
+        </div>
+
+        <div class="nav--toggle" id="nav-toggle">
+          <i class='bx bx-grid-alt'></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="cart--container hide" id="cart-container">
+    <div class="cart" id="cart">
+      <div class="nav--close" id="close-cart">
+        <i class='bx bx-x'></i>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aut temporibus quisquam at est, impedit
+    provident ea cum reiciendis asperiores blanditiis dignissimos quas nobis corrupti nam ipsam expedita saepe! Neque,
+    labore dolores. Deserunt, quia quas cupiditate ipsa magni nobis quis. Ullam pariatur sed accusantium debitis odit.
+    Sunt excepturi ab accusantium eveniet ut illo dolores corrupti mollitia, optio expedita maiores natus, aperiam
+    eligendi sapiente. Placeat dolores, ad saepe rerum nisi, delectus tempore molestias aperiam illum excepturi minus
+    distinctio quae facilis. Accusamus suscipit impedit nihil. Consequuntur est voluptatem beatae libero iure eum
+    provident numquam. Deleniti autem veniam nulla minima tempora, voluptas reprehenderit mollitia cumque consequuntur
+    officiis alias nihil voluptatum iure obcaecati iste dignissimos, sint labore minus a nisi temporibus debitis quae.
+    Eius veritatis ipsum provident ut nam reiciendis reprehenderit commodi maiores odit praesentium atque iure aliquam
+    illum eligendi blanditiis rem possimus voluptas quisquam ipsam rerum corrupti, sint fugit voluptate tempora. Atque
+    ipsum debitis ducimus dolore ipsam impedit deleniti reiciendis illo quo doloribus, earum sit consectetur et dolorum
+    molestias incidunt alias aperiam tenetur iusto veniam, eos est asperiores. Odit corporis eos et quaerat perspiciatis
+    hic velit dolor vitae quasi ipsam odio porro reiciendis, laboriosam explicabo ut itaque facilis labore repellat in
+    commodi fuga id asperiores! Quas architecto corrupti eveniet harum magnam, delectus aperiam cumque quos sed eum,
+    totam mollitia repellat labore pariatur maiores incidunt maxime accusamus. Ratione delectus nisi odio quibusdam
+    natus rem obcaecati nihil quasi. Qui reiciendis obcaecati facere quasi excepturi nisi officiis eligendi, cupiditate
+    pariatur consequuntur, alias error vitae aperiam voluptatem natus voluptas, nemo ex. Obcaecati, molestiae sequi,
+    assumenda esse distinctio, quam ullam ratione optio nulla in ea earum corrupti a dolorem reprehenderit eveniet
+    praesentium laborum harum recusandae atque tempora dolorum ipsam laboriosam. Recusandae odit saepe rem iste commodi,
+    repudiandae velit quaerat facilis sint itaque tenetur quas dicta alias ea natus non labore suscipit, voluptatum
+    necessitatibus, illum delectus unde consectetur consequuntur ducimus! Autem neque fugit alias accusantium. Quas
+    nihil sit dicta laboriosam veniam doloribus voluptates corporis, illo pariatur similique! Eum expedita iusto sit
+    natus explicabo corporis eligendi adipisci suscipit vitae sapiente velit veniam porro quidem sequi incidunt aliquid
+    iste voluptates atque deleniti, repellendus obcaecati vel, qui harum ab. Quo qui aspernatur velit amet omnis
+    dignissimos totam magnam, delectus ipsa, repudiandae culpa quasi facilis veniam accusantium vero quas accusamus
+    minus provident inventore ea nihil! Illo, sit, esse sint expedita iusto nisi beatae sequi quod recusandae
+    blanditiis, voluptatum odio quae similique officia modi! Quaerat ullam quis sit consequuntur corporis perspiciatis,
+    harum consequatur maiores architecto minima fuga enim soluta delectus inventore voluptatem quasi illo, excepturi
+    repellendus dolorum voluptas ratione quibusdam. Mollitia voluptatum aperiam consectetur exercitationem dolorum quam
+    doloribus hic nam, laudantium deleniti facere harum officiis ut beatae odit excepturi culpa aliquam esse tenetur
+    voluptates asperiores quasi illo quos libero! Reiciendis, inventore dolorem consectetur iure molestias et.
+    Distinctio non ad natus veritatis pariatur ea officiis ipsum eaque impedit quae possimus doloribus dolore libero
+    voluptate accusantium vero id, animi iure voluptates? Dolores, delectus culpa? Laborum, minus veritatis! Quibusdam
+    obcaecati excepturi veniam consectetur architecto, sit esse iure!
+  </main>
+
+
 </body>
 
 </html>
