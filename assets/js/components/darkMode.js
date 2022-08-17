@@ -1,24 +1,24 @@
-export function darkMode() {
-	/* =========DARK MODE======== */
+export function darkTheme() {
 	const themeButton = document.getElementById('theme-button')
-	const dark = 'dark-theme'
-	const icono = 'bx-sun'
-	const seleccionarTema = window.localStorage.getItem('seleccionar-tema')
-	const seleccionarIcono = window.localStorage.getItem('seleccionar-icono')
+	const darkTheme = 'dark-theme'
+	const iconTheme = 'bx-sun'
 
-	const obtenerTema = () => (document.body.classList.contains(dark) ? 'dark-theme' : 'light-theme')
+	const selectedTheme = window.localStorage.getItem('selected-theme')
+	const selectedIcon = window.localStorage.getItem('selected-icon')
 
-	const obtenerIcono = () => (themeButton.classList.contains(icono) ? 'bx-sun' : 'bx-moon')
+	const getCurrentTheme = () => (document.body.classList.contains(darkTheme) ? 'dark' : 'light')
+	const getCurrentIcon = () =>
+		themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
 
-	if (seleccionarTema) {
-		document.body.classList[seleccionarTema === 'dark-theme' ? 'add' : 'remove'](dark)
-		themeButton.classList[seleccionarIcono === ' bx-moon' ? 'add' : 'remove'](icono)
+	if (selectedTheme) {
+		document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+		themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
 	}
 
 	themeButton.addEventListener('click', () => {
-		document.body.classList.toggle(dark)
-		themeButton.classList.toggle(icono)
-		window.localStorage.setItem('seleccionar-tema', obtenerTema())
-		window.localStorage.setItem('seleccionar-icono', obtenerIcono())
+		document.body.classList.toggle(darkTheme)
+		themeButton.classList.toggle(iconTheme)
+		window.localStorage.setItem('selected-theme', getCurrentTheme())
+		window.localStorage.setItem('selected-icon', getCurrentIcon())
 	})
 }

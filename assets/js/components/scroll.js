@@ -1,12 +1,13 @@
-export function scroll() {
-	/* ========SCROLL========= */
-	const header = document.getElementById('header')
+export function cabeceraScroll() {
+	const cabecera = document.getElementById('cabecera')
 
-	window.addEventListener('scroll', () => {
-		if (window.scrollY >= 50) {
-			header.classList.add('scroll-header')
-		} else {
-			header.classList.remove('scroll-header')
-		}
-	})
+	if (cabecera) {
+		window.addEventListener('scroll', function () {
+			if (window.scrollY >= 50) {
+				cabecera.classList.add('scroll-cabecera')
+			} else {
+				cabecera.classList.remove('scroll-cabecera')
+			}
+		})
+	}
 }
