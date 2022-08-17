@@ -2,7 +2,6 @@
 
 ## Colaboradores
 
-- Juan Ticona
 - Julio Sevillano
 - Jorge Beltran
 
@@ -10,7 +9,6 @@
 
 | Nombre          | Modulos                                   |
 | --------------- | ----------------------------------------- |
-| Juan Manuel     | Maquetador                                |
 | Julio Sevillano | LocalStorage DarkMode <br> Salto de linea |
 | Jorge Beltran   | Loader                                    |
 
