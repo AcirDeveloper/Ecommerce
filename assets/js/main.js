@@ -1,21 +1,20 @@
-import { darkMode } from './components/darkMode.js'
-import { cart } from './components/cart.js'
-import { scroll } from './components/scroll.js'
+import { activeProduct } from './components/activar.js'
+import { rendercart } from './components/cart.js'
+import { cartMenu } from './components/menuCart.js'
+import { darkTheme } from './components/darkMode.js'
+import { cabeceraScroll } from './components/scroll.js'
+import { load } from './components/load.js'
+import { navigateMenu } from './components/navegacion.js'
 
-window.addEventListener('load', () => {
+window.addEventListener('load', function () {
 	load()
 })
 
-document.addEventListener('DOMContentLoaded', () => {
-	darkMode()
-	cart()
-	scroll()
+document.addEventListener('DOMContentLoaded', function () {
+	darkTheme()
+	cabeceraScroll()
+	navigateMenu()
+	rendercart()
+	activeProduct()
+	cartMenu()
 })
-
-/* =========== LOADER ========== */
-const loader = document.getElementById('loader')
-function load() {
-	setTimeout(() => {
-		loader.classList.add('hide')
-	}, 1000)
-}
