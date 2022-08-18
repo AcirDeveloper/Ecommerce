@@ -1,5 +1,5 @@
 import { db } from './productos.js'
-import { numberToCurrency } from '../helpers/numberToCurrency.js'
+import { numberToCurrency } from './moneda.js'
 
 export const cart = {
 	items: window.localStorage.getItem('cart') ? JSON.parse(window.localStorage.getItem('cart')) : [],
@@ -11,7 +11,7 @@ export const cart = {
 				if (cart.methods.hasInventory(id, quantity + cartItem.quantity)) {
 					cartItem.quantity += quantity
 				} else {
-					window.alert('We do not have enough in stock')
+					window.alert('No hay mas de este producto')
 				}
 			} else {
 				cart.items.push({ id, quantity })
@@ -102,8 +102,8 @@ export function rendercart() {
 		html += `
       <div class="cart__empty">
         <img src="assets/images/empty-cart.png" alt="empty cart">
-        <h2>Your cart is empty</h2>
-        <p>You can add items to your cart by clicking on the "<i class="bx bx-plus"></i>" button on the product page.</p>
+        <h2>El carrito esta vacio</h2>
+        <p>Puedes añadir cosas al carrito dando clic al boton "<i class="bx bx-plus"></i>" de cada producto.</p>
       </div>`
 	}
 

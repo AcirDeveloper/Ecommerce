@@ -1,6 +1,6 @@
 import { items } from '../data/db.js'
 import { cart, rendercart } from './cart.js'
-import { numberToCurrency } from '../helpers/numberToCurrency.js'
+import { numberToCurrency } from './moneda.js'
 
 export const db = {
 	items: window.localStorage.getItem('productos')

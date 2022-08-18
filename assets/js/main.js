@@ -5,9 +5,8 @@ import { darkTheme } from './components/darkMode.js'
 import { cabeceraScroll } from './components/scroll.js'
 import { load } from './components/load.js'
 import { navigateMenu } from './components/navegacion.js'
-import { renderproductos } from './components/productos.js'
 import { sectionActive } from './components/seccionActiva.js'
-
+import { renderproductos } from './components/productos.js'
 
 window.addEventListener('load', function () {
 	load()

@@ -5,18 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academlo Store</title>
-  <!--=============== FAVICON ===============-->
+  <title>Practica Store</title>
+  <!-- FAVICON -->
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  <!--=============== BOXICONS ===============-->
+  <!-- BOXICONS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <!--=============== CSS ===============-->
+  <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- MAIN JS -->
+  <script src="/assets/js/main.js" type="module" defer></script>
 </head>
 
-<body>
+<body class="dark-theme">
 
-  <!--==================== LOADER ====================-->
+  <!-- LOADER -->
   <div class="load" id="load">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="load__gif">
       <title>Academlo Logo</title>
@@ -33,7 +35,7 @@
     </svg>
   </div>
 
-  <!--==================== cabecera ====================-->
+  <!-- cabecera -->
   <header class="cabecera" id="cabecera">
     <nav class="navigate container">
       <a href="#" class="navigate__logo">
@@ -41,7 +43,6 @@
           <title>Academlo Logo</title>
           <g>
             <g>
-              <!-- <path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z"></path> -->
               <path
                 d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
               </path>
@@ -55,15 +56,9 @@
           <li class="navigate__item">
             <a href="#home" class="navigate__link active-link">Home</a>
           </li>
-          <!-- <li class="navigate__item">
-            <a href="#featured" class="navigate__link">Featured</a>
-          </li> -->
           <li class="navigate__item">
-            <a href="#productos" class="navigate__link">productos</a>
+            <a href="#productos" class="navigate__link">Productos</a>
           </li>
-          <!-- <li class="navigate__item">
-            <a href="#new" class="navigate__link">New</a>
-          </li> -->
         </ul>
 
         <div class="navigate__close" id="navigate-close">
@@ -87,30 +82,30 @@
     </nav>
   </header>
 
-  <!--==================== cart ====================-->
+  <!-- cart -->
   <div class="cart" id="cart">
     <i class='bx bx-x cart__close' id="cart-close"></i>
 
-    <h2 class="cart__title-center">My cart</h2>
+    <h2 class="cart__title-center">Carrito</h2>
 
     <div class="cart__container"></div>
 
     <div class="cart__prices">
-      <span class="cart__prices-item"><span id="items-count"></span> items</span>
+      <span class="cart__prices-item"><span id="items-count"></span> Elementos</span>
       <span class="cart__prices-total" id="cart-total"></span>
     </div>
 
     <div class="cart__checkout">
       <button class="button cart__btn" id="cart-checkout" disabled><i class='bx bxs-check-shield'></i>
-        Checkout</button>
+        Comprar</button>
     </div>
 
   </div>
 
-  <!--==================== MAIN ====================-->
+  <!--===== MAIN =====-->
   <main class="main">
 
-    <!--==================== HOME ====================-->
+    <!--===== HOME =====-->
     <section class="home" id="home">
       <div class="home__container container grid">
         <div class="home__img-bg">
@@ -118,40 +113,30 @@
         </div>
 
         <div class="home__data">
-          <h1 class="home__title">New Sweatshirt <br> COLLECTIONS 2022</h1>
+          <h1 class="home__title"> Moda y Ropa <br> 2022 </h1>
           <p class="home__description">
-            Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern
-            design.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis totam rem dolore sunt odit pariatur.
           </p>
-          <span class="home__price">$14.00</span>
-
-          <div class="home__btns">
-            <a href="#" class="button button--gray button--small">
-              Discover
-            </a>
-
-            <button class="button home__button">ADD TO cart</button>
-          </div>
         </div>
       </div>
     </section>
 
-    <!--==================== productos ====================-->
+    <!-- productos -->
     <section class="productos" id="productos">
       <div class="productos__container container">
         <ul class="productos__filters">
           <li class="productos__item productos__line" data-filter="all">
             <h3 class="productos__title">
-              Show All
+              Todos
             </h3>
             <span class="productos__stock">
-              show all productos
+              Todos los productos
             </span>
           </li>
 
           <li class="productos__item productos__line active-product" data-filter=".hoodies">
             <h3 class="productos__title">
-              Hoodies
+              Jeans
             </h3>
             <span class="productos__stock">
               3 productos
@@ -160,7 +145,7 @@
 
           <li class="productos__item productos__line" data-filter=".shirts">
             <h3 class="productos__title">
-              Shirts
+              Camisetas
             </h3>
             <span class="productos__stock">
               4 productos
@@ -169,7 +154,7 @@
 
           <li class="productos__item" data-filter=".sweatshirts">
             <h3 class="productos__title">
-              Sweatshirts
+              Sudaderas
             </h3>
             <span class="productos__stock">
               4 productos
@@ -183,83 +168,15 @@
 
   </main>
 
-  <!--==================== FOOTER ====================-->
+  <!-- FOOTER -->
   <footer class="footer section">
-    <div class="footer__container container grid">
-      <div class="footer__content">
-        <h3 class="footer__title">Our information</h3>
-
-        <ul class="footer__list">
-          <li>Toluca - México</li>
-        </ul>
-      </div>
-      <div class="footer__content">
-        <h3 class="footer__title">About Us</h3>
-
-        <ul class="footer__links">
-          <li>
-            <a href="#" class="footer__link">Support Center</a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">Customer Support</a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">About Us</a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">Copy Right</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer__content">
-        <h3 class="footer__title">Product</h3>
-
-        <ul class="footer__links">
-          <li>
-            <a href="#" class="footer__link">Hoodies</a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">Shirts</a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">Sweatshirts</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer__content">
-        <h3 class="footer__title">Social</h3>
-
-        <ul class="footer__social">
-          <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-            <i class='bx bxl-facebook'></i>
-          </a>
-
-          <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-            <i class='bx bxl-twitter'></i>
-          </a>
-
-          <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-            <i class='bx bxl-instagram'></i>
-          </a>
-        </ul>
-      </div>
-    </div>
-
-    <span class="footer__copy">&#169; ACADEMLO. All rigths reserved</span>
+    <span class="footer__copy"> Julio Sevillano & Jorge Beltran</span>
   </footer>
 
-  <!--=============== SCROLL UP ===============-->
+  <!-- SCROLL UP -->
   <a href="#" class="scrollup" id="scroll-up">
     <i class='bx bx-up-arrow-alt scrollup__icon'></i>
   </a>
-
-  <!--=============== MIXITUP FILTER ===============-->
-  <!--  <script src="/assets/js/helpers/mixitup.min.js"></script> -->
-
-  <!--=============== MAIN JS ===============-->
-  <script src="/assets/js/main.js" type="module"></script>
 </body>
 
 </html>
